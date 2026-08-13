@@ -159,7 +159,7 @@
 
         layer_3 {
             bindings = <
-  &kp LEFT_ARROW  &kp UP_ARROW    &none            &trans  &trans    &trans  &trans  &trans  &trans  &trans
+  &kp LEFT_ARROW  &kp UP_ARROW    &none            &none   &trans    &trans  &trans  &trans  &trans  &trans
   &none           &kp DOWN_ARROW  &kp RIGHT_ARROW  &none   &trans    &trans  &trans  &trans  &trans  &trans
   &trans          &none           &none            &trans  &trans    &trans  &trans  &trans  &trans  &trans
                                   &trans           &trans  &trans    &trans  &trans  &trans
