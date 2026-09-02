@@ -1,11 +1,15 @@
 // Copyright 2026 Sebastian Kulinski
 //
-// Miryoku layout mapping for the Temper 3x5 split.
-// Temper matrix transform logical positions:
-// 0..9   = top row, left to right
-// 10..19 = home row, left to right
-// 20..29 = bottom row, left to right
-// 30..35 = thumb row, left to right
+// Miryoku mapping for the Temper 3x5 split.
+//
+// Temper matrix-transform position order:
+//   0..9   = top row, left to right
+//   10..19 = home row, left to right
+//   20..29 = bottom row, left to right
+//   30..35 = six thumb keys, left to right
+//
+// Miryoku supplies 40 semantic positions. The Temper has six thumb
+// positions, so the outer two thumb placeholders on each side are ignored.
 
 #if !defined(MIRYOKU_LAYOUTMAPPING_TEMPER)
 
@@ -13,12 +17,12 @@
 K00, K01, K02, K03, K04,      K05, K06, K07, K08, K09, \
 K10, K11, K12, K13, K14,      K15, K16, K17, K18, K19, \
 K20, K21, K22, K23, K24,      K25, K26, K27, K28, K29, \
-K30, K31, K32,                K33, K34, K35 \
+N30, N31, K32, K33, K34,      K35, K36, K37, N38, N39 \
 ) \
 K00 K01 K02 K03 K04           K05 K06 K07 K08 K09 \
 K10 K11 K12 K13 K14           K15 K16 K17 K18 K19 \
 K20 K21 K22 K23 K24           K25 K26 K27 K28 K29 \
-K30 K31 K32                    K33 K34 K35
+          K32 K33 K34         K35 K36 K37
 
 #define MIRYOKU_KLUDGE_TOPROWCOMBOS_LEFTPINKIE 1 2
 #define MIRYOKU_KLUDGE_TOPROWCOMBOS_LEFTINNERINDEX 2 3
